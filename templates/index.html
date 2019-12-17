@@ -1,34 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8" />
-	<link rel='stylesheet' href='loginstyles.css' type='text/css' />
+{% extends 'base.html' %}
 
-</head>
-
+{% block content %}
 <body>
-  <div class="content">
-<form class="form" name="hoursLog" action="data_connection.php" method="GET" onsubmit="return validateAll();">
-  <fieldset>
-    <legend>Log Hours:</legend>
-    Full Name:<br>
-    <input class="input" type="text" name="name" autofocus required><br><br>
-    Computing Id:<br>
-    <input class="input" type="text" name="id" required pattern="[a-z]{2,3}[0-9][a-z]{2,3}"><br><br>
-    Hours Worked:<br>
-    <input class="input" type="value" name="hours" required pattern="[0-9]{0,2}\.?[0-9]*"><br><br>
-    <input type="checkbox" name="honor" value="honor" required>On my honor, I validate that the above information is correct<br><br>
-    <div type="feedback" id="error-msg"></div>
-    <input class="button" type="submit" value="Submit">
 
-  </fieldset>
-</form>
-</div>
-  <footer class="primary-footer container">
-      <small class="copyright">&copy;Virginia Ambassadors | 2019 | All Rights Reserved</small>
-      <nav class="nav">
-      </nav>
-    </footer>
+<a href="/log-hours">Log Hours</a>
 
 
-  </body>
+</body>
+
+{% endblock %}
