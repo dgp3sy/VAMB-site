@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% block content %}
+<div class="container">
+    <h1 class="text-center" style="padding-top:50px; padding-bottom:25px;">Log Volunteer Hours</h1>
+    <div class="text-center" style="padding-top:20px;">
+        {% load crispy_forms_tags %}
+        <form method="post">
+<!--            {% csrf_token %}-->
+            <div class="row">
+                <div class="col-md-6">
+                    {{ form.first_name|as_crispy_field }}
+                </div>
+                <div class="col-md-6">
+                    {{ form.last_name|as_crispy_field }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    {{ form.computing_id|as_crispy_field }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    {{ form.hours|as_crispy_field }}
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success">Submit Hours</button>
+        </form>
+
+    </div>
+</div>
+
+</body>
+{% endblock %}
+</html>

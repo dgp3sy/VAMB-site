@@ -15,9 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from hours import views
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hours/', include('hours.urls'))
+    path('', include('hours.urls')),
+    path('log-hours/', views.VolunteerLog, name='log_hours')
+
 ]
