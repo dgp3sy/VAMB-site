@@ -9,4 +9,4 @@ Virginia Ambassadors is a volunteer organization at the University of Virginia t
 This project is owned by Virginia Ambassadors Executive Board. No altercations or adaptions can be made to this project without the express consent of the organization. 
 
 ## Acknowlegements
-* Daniel Perkins, University of Virginia
+* Daniel Perkins, Hoos Online Chair, University of Virginia Class of 2020
